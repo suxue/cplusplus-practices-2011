@@ -9,7 +9,7 @@
 using namespace std;
 
 void fun(){
-	char ch=65;
+	char ch='C';
 	cout<<ch<<endl;
 	return;
 }
