@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	float a,b,Youzi;
-	cout<<"ÇëÊäÈëÖØÁ¿";
+	cout<<"è¯·è¾“å…¥é‚®èµ„é‡é‡";
 	cin>>a;
 	if(a<=15)
 	cout<<"Youzi="<<5;
@@ -13,7 +13,7 @@ int main()
 	cout<<"Youzi="<<12;
 	else 
 	{
-		cout<<"ÇëÊäÈëÓÊ×Ê¾àÀë";
+		cout<<"è¯·è¾“å…¥å¯„é€è·ç¦»";
 		cin>>b;
 		if(a<=60) 
 		cout<<"Youzi="<<14+b/1000;
