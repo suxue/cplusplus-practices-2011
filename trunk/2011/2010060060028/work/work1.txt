@@ -49,4 +49,5 @@ int main(){
 			cout<<"ÓÊ·ÑÊÇ£º"<<(15+distance/1000)<<endl;
 		}
 	return 0;
+
 }
