@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 		int money;
 		printf("input the weight and the distance,end with input 0 0\n");
 		cin>>weight>>dist;
+    if(weight==0&&dist==0)break;
 		if(weight<=15)
 		{
 			money=5;
