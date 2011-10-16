@@ -1,3 +1,6 @@
+/*
+    程序实现输入10个整数，升序输出，并且先输出奇数再输出偶数
+*/
 #include"stdio.h"
 int main()
 {
@@ -14,7 +17,7 @@ int main()
     for(int j=1;j>=0;j--)
         for(int i=0; i<10; i++) {
             if(j && num[i]%2 == 1) printf("%d ",num[i]);
-            if(!j && num[i]%2 == 0) printf("%d",num[i]);
+            if(!j && num[i]%2 == 0) printf("%d ",num[i]);
         }
     return 0;
 }
