@@ -1,0 +1,19 @@
+void A(a[n])
+{
+    float B[n],C[n];
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        B[i]=A[i];
+    }
+    for(j=n-1;j>=0;j--)
+    {
+        C[j]=A[j];
+    }
+    for(i=0;i<n;i++)
+    {
+        if(B[i]!=C[i])
+        cout<<"A[n]不是回文"<<endl;
+    }
+    cout<<"A[n]是回文"<<endl;
+}
