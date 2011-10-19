@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	int n;
 	cout<<"input the number of new telephone numbers:\n";
 	cin>>n;
-	cout<<"input n names and telephones like  A B  :\n";
+	cout<<"input n lines,each line contains a name and a telephone like  A B  :\n";
 	Telephone_Book* tp= new Telephone_Book[n];
 	for(int i=0;i<n;i++){
 		cin>>tp[i].nam>>tp[i].number;
