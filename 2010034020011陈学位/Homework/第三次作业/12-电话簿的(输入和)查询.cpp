@@ -18,13 +18,7 @@ struct Telephone_Book
 	string nam;
 	string number;
 };
-bool alldigits(string s)
-{
-	for(int i=0;i<s.size();i++){
-		if(!isdigit(s[i]))return false;
-	}
-	return true;
-}
+
 int main(int argc, char *argv[])
 {
 	int n;
