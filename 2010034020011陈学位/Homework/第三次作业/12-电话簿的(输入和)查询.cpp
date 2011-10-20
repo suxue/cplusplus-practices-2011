@@ -33,8 +33,7 @@ int main(int argc, char *argv[])
 	cout<<"input the number of seaches\n";
 	int q;
 	cin>>q;
-	for(int i=0;i<q;i++)
-	{
+	for(int i=0;i<q;i++){
 		string fstr;
 		cin>>fstr;
 		bool found=false;
