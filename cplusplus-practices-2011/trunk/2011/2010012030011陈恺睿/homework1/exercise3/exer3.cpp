@@ -65,4 +65,6 @@ int main(){
         fee = 15 + ( distance/1000 );
     }
     cout << "Ç×£¬ÓÊ×ÊÊÇ " << fee << " ÔªÅ¶";
+
+    return 0;
 }
