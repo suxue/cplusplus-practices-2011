@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-const int SIZE=1000;
+const int SIZE=10000;    //can be modified to 1000 to check the *next  
 struct Stack_element{
 	int num[SIZE];
 	Stack_element* next;
@@ -98,12 +98,12 @@ int main(int argc, char *argv[])
 	cout<<"S.top="<<S.top()<<endl;
 	cout<<"S.size="<<S.size()<<endl;
 	cout<<"S.max_size="<<S.max_size()<<endl;
-	for(int i=0;i<22;i++){
+	for(int i=0;i<2222;i++){
 		S.push(i);
 	}
 	while(!S.isempty()){
-		cout<<"S.top="<<S.top();
-		S.pop();cout<<"    poped\n";
+		cout<<"S.top="<<S.top()<<endl;
+		S.pop();
 	}
 	return 0;
 }
