@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a[10],i,j,k,t;
+	cout<<"请输入十个整数"<<endl; 
+	for(i=0;i<10;i++)
+	cin>>a[i];
+	int b[5],c[5];
+	for(i=0,j=0,k=0;i<10;i++){
+			if(a[i]%2==0||a[i]==0)
+		    {
+			b[j]=a[i];
+			j++;
+			}
+			else{
+			c[k]=a[i];
+			k++;
+			}
+			if(j==5&&k==5)
+			break;
+	}
+	for(i=0;i<5-1;i++)
+	{
+		for(j=i+1;j<5;j++)
+		if(b[i]>=b[i+1])
+		{
+			t=b[i];
+			b[i]=b[i+1];
+			b[i+1]=t; 
+		}
+	}
+	for(i=0;i<5-1;i++)
+	{
+		for(j=i+1;j<5;j++)
+		if(c[i]>=c[i+1])
+		{
+			t=c[i];
+			c[i]=c[i+1];
+			c[i+1]=t; 
+		}
+	}
+	for(j=0;j<5;j++)
+	{
+		cout<<c[j]<<"\t";
+	}
+	for(j=0;j<5;j++)
+	{
+		cout<<b[j]<<"\t";
+	}
+	return 0;
+	}
