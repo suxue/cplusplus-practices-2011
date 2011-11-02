@@ -1,4 +1,5 @@
-#那个实践的地址
+#summary 那个实践的地址：
+http://code.google.com/p/cplusplus-practices-and-examples/
 = Introduction =
 那个xhtml的code地址
 Add your content here.
