@@ -1,7 +1,7 @@
 #include"Stack.h"
 
 Stack::Stack(int n) {
-        int stack[n];// = new int[n];
+        stack = new int[n];
         isFull = true;
         isEmpty = true;
         number = 0;
@@ -22,11 +22,11 @@ Stack::Stack(int n) {
             }
             return;
         } else {
-            int temp[number + 100];// = new int[number + 100];
+            int *temp = new int[number + 100];
             for (int i = 0; i <= number; i++) {
                 temp[i] = stack[i];
             }
-            int stack[number + 100];// = new int[number + 100];
+            stack = new int[number + 100];
             for (int i = 0; i <= number + 100; i++) {
                 stack[i] = temp[i];
             }
@@ -48,12 +48,12 @@ Stack::Stack(int n) {
             isEmpty = true;
         }
         if (total - number > 100) {
-            int temp[total - 100];// = new int[total - 100];
+            int *temp = new int[total - 100];
             for (int i = 0; i <= number; i++) {
                 temp[i] = stack[i];
             }
             delete(stack);
-            int stack[total - 100];// = new int[total - 100];
+            stack = new int[total - 100];
             for (int i = 0; i <= number; i++) {
                 stack[i] = temp[i];
             }

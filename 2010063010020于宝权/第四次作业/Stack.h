@@ -20,7 +20,7 @@ public:
     void push(int n);
     int pop() ;
 
-    int stack[];
+    int *stack;
     bool isEmpty;
     bool isFull;
 private:
