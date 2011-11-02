@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-那个实践的地址
+#那个实践的地址
 = Introduction =
 那个xhtml的code地址
 Add your content here.
