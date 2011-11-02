@@ -1,5 +1,5 @@
 #summary One-sentence summary of this page.
-
+http://code.google.com/p/cplusplus-practices-and-examples/
 = Introduction =
 那个xhtml的code地址
 Add your content here.
