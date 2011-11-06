@@ -1,4 +1,4 @@
-/*
+﻿/*
  * File:   Stack.h
  * Author: DELL
  *
@@ -10,7 +10,7 @@
 
 
 
-#endif	/* STACK_H */
+
 
 class Stack {
 public:
@@ -29,3 +29,4 @@ private:
     int total;
 
 };
+#endif	/* STACK_H */
