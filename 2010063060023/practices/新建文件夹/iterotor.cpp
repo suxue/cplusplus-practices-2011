@@ -7,14 +7,14 @@ typedef struct Node
 	struct Node *next;
 } Node,*Nodeptr;
 
-class Iterator;
+class Iterator;//前向引用声明 
 class Link
 {
   private:
     Nodeptr head;
   public:
     Link();
-    Link append(int n);
+    Nodeptr append(int n);
     Iterator iterator();
     friend class Iterator;
 };
@@ -27,20 +27,22 @@ class Iterator
   public:
     Iterator();
 	int hasNext();
-	Node getNode();
+	Node& getNode();
 	void next();
 };
 
 int main()
 {
 	Link link;
-	link.append(1).append(2).append(3);
+	link.append(1);
+	link.append(2);
+	link.append(3);
 	Iterator i=link.iterator();
 	while(i.hasNext())
 	{
 		i.next();
-		Node node=i.getNode();
-		cout<<node.value<<endl;
+		Node &node=(i.getNode());
+		cout<<&node.value<<endl;
 	}
 	return 0;
 }
@@ -50,14 +52,13 @@ Link::Link()
 	head=(Nodeptr)new(struct Node);
 	head->next;
 }
-Link Link::append(int n)
+Nodeptr Link::append(int n)
 {
   Nodeptr p=(Nodeptr)new(struct Node);
   p->value=n;
   p->next=head->next;
   head->next=p;
-  Link ll;
-  return  ll;
+  return head;
 }
 Iterator Link::iterator()
 {	
@@ -77,10 +78,10 @@ int  Iterator::hasNext()
   else return 0;
 }
 
-Node Iterator::getNode()
+Node& Iterator::getNode()
 {
    
-   return (*r);
+   return *r;
 }
 
 void Iterator::next()
