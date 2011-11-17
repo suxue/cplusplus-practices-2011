@@ -4,8 +4,9 @@
 class Link{
     public :
         Link();
+        ~Link();
         Link& append(int app);
-        Node *head, *sp, *node;
+        Node *head, *sp;//, *node;
         Iterator iterator;
 };
 

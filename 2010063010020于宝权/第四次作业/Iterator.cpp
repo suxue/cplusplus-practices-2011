@@ -24,3 +24,6 @@ void Iterator::next(){
 Iterator::Iterator(){
     node = new Node();
 }
+Iterator::~Iterator(){
+    //node->~Node();
+}

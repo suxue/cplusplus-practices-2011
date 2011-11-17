@@ -8,6 +8,7 @@ class Iterator{
         Node& getNode();
         Iterator();
         Node * node;
+        ~Iterator();
 };
 
 
