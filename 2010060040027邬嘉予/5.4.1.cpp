@@ -15,7 +15,7 @@ void input(int a[],int b[],int s[],int n)
     }
 
 }
-void change(int a[],int n)
+void change(int *a[],int *n)
 {
     for(int i;i<=n;i++)
     for(int j;j<=i+1;j++)
