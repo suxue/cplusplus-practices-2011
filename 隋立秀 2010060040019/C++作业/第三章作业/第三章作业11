@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int weight,distance, fee;
+	cout<<"Input weight and distance£º"<<endl;
+	cin>>weight>>distance;
+	if(weight<=15)
+	fee=5;
+	else if (weight<=30)
+	fee=9;
+	else if (weight<=45)
+	fee=12;
+	else if (weight<=60)
+	fee=14+distance/1000;
+	else
+	fee=15+distance/1000;
+	cout<<"fee"<<fee<<endl; 
+}

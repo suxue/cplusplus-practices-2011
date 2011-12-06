@@ -1,0 +1,16 @@
+1.输出：func in class C
+        func in class C
+        func in class C
+
+2.输出：B::~B() called
+        A::~A() called
+
+3.输出：*****12345
+        54321*****
+
+4.输出：2213
+
+5.输出：Total is 11
+        Total is 11
+        Total is 12
+        Total is 12
