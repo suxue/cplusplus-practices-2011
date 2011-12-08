@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int i;
+   for(i=65;i<=90;i++){
+   cout<<(char)i<<'\n';
+   }
+   int n;
+   for(n=90;n>=65;n--){
+   cout<<(char)n<<'\n';
+   }
+
+}
