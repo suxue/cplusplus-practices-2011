@@ -21,10 +21,11 @@ public:
 	friend ostream& operator <<(ostream& out,Manager& S);
 };
 ostream& operator <<(ostream& out,Manager& S){
-	cout<<"Number:"<<S.number<<endl;
-	cout<<"Name:"<<S.name<<endl;
-	cout<<"Salary Per Month:"<<5000<<endl;
-	cout<<endl;
+	out<<"Number:"<<S.number<<endl;
+	out<<"Name:"<<S.name<<endl;
+	out<<"Salary Per Month:"<<5000<<endl;
+	out<<endl;
+	return out;
 }
 
 class Technician:public Employee{
@@ -37,10 +38,11 @@ private:
 int hour;
 };
 ostream& operator <<(ostream& out,Technician& S){
-	cout<<"Number:"<<S.number<<endl;
-	cout<<"Name:"<<S.name<<endl;
-	cout<<"Salary Per Month:"<<S.salary*S.hour<<endl;
-	cout<<endl;
+	out<<"Number:"<<S.number<<endl;
+	out<<"Name:"<<S.name<<endl;
+	out<<"Salary Per Month:"<<S.salary*S.hour<<endl;
+	out<<endl;
+	return out;
 }
 
 class Salesman:public Employee{
@@ -51,10 +53,11 @@ public:
 	friend ostream& operator <<(ostream& out,Salesman& S);
 };
 ostream& operator <<(ostream& out,Salesman& S){
-	cout<<"Number:"<<S.number<<endl;
-	cout<<"Name:"<<S.name<<endl;
-	cout<<"Salary Per Month:"<<S.salary*0.04<<endl;
-	cout<<endl;
+	out<<"Number:"<<S.number<<endl;
+	out<<"Name:"<<S.name<<endl;
+	out<<"Salary Per Month:"<<S.salary*0.04<<endl;
+	out<<endl;
+	return out;
 }
 
 class Salesmanager:public Employee{
@@ -65,10 +68,11 @@ public:
 	friend ostream& operator <<(ostream& out,Salesmanager& S);
 };
 ostream& operator <<(ostream& out,Salesmanager& S){
-	cout<<"Number:"<<S.number<<endl;
-	cout<<"Name:"<<S.name<<endl;
-	cout<<"Salary Per Month:"<<S.salary*0.005+5000<<endl;
-	cout<<endl;
+	out<<"Number:"<<S.number<<endl;
+	out<<"Name:"<<S.name<<endl;
+	out<<"Salary Per Month:"<<S.salary*0.005+5000<<endl;
+	out<<endl;
+	return out;
 }
 
 int main()
