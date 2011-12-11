@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include<iomanip> 
 #define MaxSize 2
 using namespace std;
  struct TBook
@@ -83,7 +84,6 @@ int main()
 		   else
 		   cout<<p1->Name[m]<<"µÄºÅÂëÊÇ:"<<p1->Num[m]<<endl;
 		   break;
-	
 	}
 	
 	
