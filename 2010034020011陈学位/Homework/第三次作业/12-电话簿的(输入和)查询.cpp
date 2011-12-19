@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		cin>>tp[i].nam>>tp[i].number;
 		cout<<endl;
 	}
-	cout<<"input the number of seaches\n";
+	cout<<"input the number of searches\n";
 	int q;
 	cin>>q;
 	for(int i=0;i<q;i++){
